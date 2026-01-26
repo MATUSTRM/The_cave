@@ -1,0 +1,75 @@
+{
+	"categories": [
+		{
+			"uuid": "197753cd-a3f9-4cbf-ad93-eea210149cca",
+			"title": "To Do",
+			"color": "df6600"
+		},
+		{
+			"uuid": "2b1dd0f4-471d-45b1-8d1f-d56485dd0f6e",
+			"title": "Programming",
+			"color": "a8b1bc"
+		},
+		{
+			"uuid": "1edc24e7-2739-4d96-b900-ff42849f46a0",
+			"title": "Level Design",
+			"color": "bf6d24"
+		},
+		{
+			"uuid": "64d76abc-213d-45da-a798-fd8b463ed273",
+			"title": "Sound",
+			"color": "2389e5"
+		},
+		{
+			"uuid": "2b865c81-3a61-4865-a5a5-9ee5dc9d6ec9",
+			"title": "Music",
+			"color": "0acf05"
+		},
+		{
+			"uuid": "b3bc7012-8112-41b9-821e-79ac113ba50f",
+			"title": "Art",
+			"color": "f204e9"
+		},
+		{
+			"uuid": "da5190bd-8cd6-40bd-8993-8af9499a67d4",
+			"title": "Gameplay",
+			"color": "f83e01"
+		},
+		{
+			"uuid": "b431fddc-d595-4184-b116-cf40602c0afc",
+			"title": "UX/UI",
+			"color": "c4300f"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "3f2c47cd-c885-4db9-b97e-26f3582b518a",
+			"title": "Todo",
+			"tasks": []
+		},
+		{
+			"uuid": "7a194205-15da-4577-8e3e-3c729b6ad67d",
+			"title": "Doing",
+			"tasks": []
+		},
+		{
+			"uuid": "7e4a5519-1d89-4c6d-8695-60ecf02e4097",
+			"title": "Done",
+			"tasks": []
+		}
+	],
+	"tasks": [],
+	"layout": {
+		"columns": [
+			[
+				"3f2c47cd-c885-4db9-b97e-26f3582b518a"
+			],
+			[
+				"7a194205-15da-4577-8e3e-3c729b6ad67d"
+			],
+			[
+				"7e4a5519-1d89-4c6d-8695-60ecf02e4097"
+			]
+		]
+	}
+}

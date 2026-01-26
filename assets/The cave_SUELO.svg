@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="532.18097mm"
+   height="51.73605mm"
+   viewBox="0 0 532.18097 51.73605"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="The cave.svg"
+   inkscape:export-batch-path="..\Exportado por Capa\Cueva"
+   inkscape:export-batch-name="The cave"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#021118"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showborder="false"
+     inkscape:clip-to-page="true"
+     inkscape:zoom="0.18998409"
+     inkscape:cx="352.66111"
+     inkscape:cy="1223.7867"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="SUELO"
+     transform="matrix(1,0,0,1.0955882,-50.832123,-498.10653)"
+     style="display:inline;stroke-width:0.95538"
+     inkscape:export-filename="layer2.png"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96">
+    <path
+       style="fill:#161b1f;fill-opacity:1;fill-rule:evenodd;stroke-width:2.86613;stroke-miterlimit:7"
+       id="path2"
+       sodipodi:type="arc"
+       sodipodi:cx="316.92261"
+       sodipodi:cy="478.25867"
+       sodipodi:rx="266.09048"
+       sodipodi:ry="23.611084"
+       sodipodi:start="5.1788087"
+       sodipodi:end="5.1787573"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="M 436.58119,457.16962 A 266.09048,23.611084 0 0 1 554.59192,488.8761 266.09048,23.611084 0 0 1 197.27013,499.34798 266.09048,23.611084 0 0 1 79.250223,467.64178 266.09048,23.611084 0 0 1 436.56897,457.16908" />
+  </g>
+</svg>

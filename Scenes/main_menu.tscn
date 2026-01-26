@@ -1,0 +1,244 @@
+[gd_scene load_steps=19 format=3 uid="uid://du01se7ewy071"]
+
+[ext_resource type="Script" uid="uid://bbd54jjw57wew" path="res://Scripts/Play.gd" id="1_28flt"]
+[ext_resource type="Texture2D" uid="uid://q0i8sgjtiu41" path="res://assets/Play btn.png" id="1_yhxw7"]
+[ext_resource type="Texture2D" uid="uid://bfuh2nh5a46eh" path="res://assets/The cave_FORGROUND.svg" id="2_ce3w2"]
+[ext_resource type="Texture2D" uid="uid://b66ko2v2a0syt" path="res://assets/Shape Template/Square.svg" id="2_cp0ys"]
+[ext_resource type="Texture2D" uid="uid://itffioelj3qs" path="res://assets/The cave_BACKGROUND.svg" id="2_opfnp"]
+[ext_resource type="Texture2D" uid="uid://qvsmq0pumbod" path="res://assets/The cave_SUELO.svg" id="3_n45e2"]
+[ext_resource type="Texture2D" uid="uid://we8nckrt5mgf" path="res://assets/The cave_LUZ.svg" id="4_cp0ys"]
+[ext_resource type="Texture2D" uid="uid://hjepm3ybcv7y" path="res://assets/The cave_MURO CUEVA.svg" id="4_opfnp"]
+[ext_resource type="FontFile" uid="uid://dclvvsrkvd2lc" path="res://Fonts/pointfree.ttf" id="9_trj04"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_trj04"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_16hvj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yhxw7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vr1f0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5egv6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t1dhk"]
+
+[sub_resource type="Animation" id="Animation_cp0ys"]
+resource_name = "Enviroment"
+length = 6.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/MURO CUEVA:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(16, 0), Vector2(-10, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Forground:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(13, 74), Vector2(63, 74)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Background:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(278, 357), Vector2(299, 357)]
+}
+
+[sub_resource type="Animation" id="Animation_yhxw7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/MURO CUEVA:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(16, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Forground:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(13, 74)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Background:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(278, 357)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yhxw7"]
+_data = {
+&"Enviroment": SubResource("Animation_cp0ys"),
+&"RESET": SubResource("Animation_yhxw7")
+}
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_top = -445
+
+[node name="VBoxContainer" type="CenterContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_trj04")
+theme_override_font_sizes/font_size = 91
+text = "THE CAVE"
+visible_characters_behavior = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="CenterContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_trj04")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_16hvj")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_yhxw7")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vr1f0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5egv6")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_t1dhk")
+icon = ExtResource("1_yhxw7")
+script = ExtResource("1_28flt")
+go_to = "res://Scenes/Storyboard.tscn"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Fondo" type="TextureRect" parent="CanvasLayer"]
+self_modulate = Color(0.00784314, 0.0666667, 0.0941176, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_cp0ys")
+
+[node name="Background" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 278.0
+offset_top = 357.0
+offset_right = 278.0
+offset_bottom = 357.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.512526, 0.512526)
+texture = ExtResource("2_opfnp")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="SUELO" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 318.0
+offset_bottom = 318.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.08157, 0.331399)
+pivot_offset = Vector2(552, 324)
+texture = ExtResource("3_n45e2")
+expand_mode = 5
+
+[node name="luz" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -161.0
+offset_bottom = 343.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_cp0ys")
+expand_mode = 4
+stretch_mode = 4
+
+[node name="Forground" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 13.0
+offset_top = 74.0
+offset_right = 13.0
+offset_bottom = 74.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.14806, 1.14806)
+pivot_offset = Vector2(529.688, 324.054)
+texture = ExtResource("2_ce3w2")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="MURO CUEVA" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_right = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.04469, 1.04469)
+pivot_offset = Vector2(576, 324)
+texture = ExtResource("4_opfnp")
+expand_mode = 2
+
+[node name="Animation Enviroment" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_yhxw7")
+}
+autoplay = "Enviroment"

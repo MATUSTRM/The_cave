@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://cct3huo075fnf"]
+
+[ext_resource type="Script" uid="uid://c2kaxalqmq8i5" path="res://Scripts/cambio_camara.gd" id="1_mcdm0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6bcn4"]
+size = Vector2(20, 436)
+
+[node name="Detect_player(Cameras)" type="Node2D" node_paths=PackedStringArray("area_1", "area_2")]
+script = ExtResource("1_mcdm0")
+area_1 = NodePath("Area OFF")
+area_2 = NodePath("Area ON")
+
+[node name="Area OFF" type="Area2D" parent="."]
+position = Vector2(-19, 0)
+collision_layer = 0
+collision_mask = 2
+
+[node name="OFF" type="CollisionShape2D" parent="Area OFF"]
+shape = SubResource("RectangleShape2D_6bcn4")
+
+[node name="Area ON" type="Area2D" parent="."]
+position = Vector2(-19, 0)
+collision_layer = 0
+collision_mask = 2
+
+[node name="ON" type="CollisionShape2D" parent="Area ON"]
+position = Vector2(40, 0)
+shape = SubResource("RectangleShape2D_6bcn4")

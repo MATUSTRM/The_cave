@@ -1,0 +1,88 @@
+[gd_scene load_steps=7 format=3 uid="uid://eiuiomd8ui1x"]
+
+[ext_resource type="Script" uid="uid://cw7b35ffw2qqf" path="res://Scripts/Scene_manager.gd" id="1_k1etd"]
+[ext_resource type="Material" uid="uid://li0nvetwmcfs" path="res://shader/Config_shader.tres" id="2_k1etd"]
+
+[sub_resource type="Animation" id="Animation_8bihv"]
+resource_name = "Fade_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Panel:material:shader_parameter/progress")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.75, -0.3]
+}
+
+[sub_resource type="Animation" id="Animation_w00xr"]
+resource_name = "Fade_out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Panel:material:shader_parameter/progress")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-0.3, 1.75]
+}
+
+[sub_resource type="Animation" id="Animation_8j8h1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Panel:material:shader_parameter/progress")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.3]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_py5r8"]
+_data = {
+&"Fade_in": SubResource("Animation_8bihv"),
+&"Fade_out": SubResource("Animation_w00xr"),
+&"RESET": SubResource("Animation_8j8h1")
+}
+
+[node name="Scene_Manager" type="Control" node_paths=PackedStringArray("animation")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k1etd")
+position_circle = Vector2(0.5, 0.5)
+position_exit = Vector2(0.1, 0.5)
+animation = NodePath("CanvasLayer/AnimationPlayer")
+mat_trans = ExtResource("2_k1etd")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_py5r8")
+}
+
+[node name="Panel" type="ColorRect" parent="CanvasLayer"]
+material = ExtResource("2_k1etd")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://58baa7sxdhkc"]
+
+[ext_resource type="Script" uid="uid://ckxsjyhtknfvh" path="res://Scripts/audio_manager.gd" id="1_31djd"]
+[ext_resource type="PackedScene" uid="uid://dgbkrdwe56egx" path="res://Scenes/Audios/sfx_.tscn" id="2_2j7f3"]
+
+[sub_resource type="Resource" id="Resource_31djd"]
+metadata/__load_path__ = "res://poisoned1.wav"
+
+[node name="Audiomanager" type="Node2D" node_paths=PackedStringArray("ambient", "sfx_ui", "sfx")]
+script = ExtResource("1_31djd")
+ambient = NodePath("Ambient")
+sfx_ui = NodePath("Sfx_ui")
+sfx = NodePath("Sfx")
+audiosfx = ExtResource("2_2j7f3")
+audio = SubResource("Resource_31djd")
+
+[node name="Ambient" type="AudioStreamPlayer" parent="."]
+
+[node name="Sfx_ui" type="AudioStreamPlayer" parent="."]
+
+[node name="Sfx" type="AudioStreamPlayer" parent="."]
