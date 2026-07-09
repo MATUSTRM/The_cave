@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://46jpbymm1ivj"]
+[gd_scene format=3 uid="uid://46jpbymm1ivj"]
 
 [ext_resource type="Script" uid="uid://74382urv8fml" path="res://Scripts/story_manager.gd" id="1_kdmin"]
 [ext_resource type="Script" uid="uid://bd1drdt88u3ys" path="res://Scripts/Page.gd" id="2_ff4vp"]
@@ -23,63 +23,52 @@
 
 [sub_resource type="Resource" id="Resource_0h83a"]
 script = ExtResource("2_ff4vp")
-title = ""
 Img = ExtResource("3_3hdmu")
-SFX_s = Array[AudioStream]([])
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_ek3wl"]
 script = ExtResource("2_ff4vp")
-title = ""
 Img = ExtResource("4_l8ntj")
 SFX_s = Array[AudioStream]([ExtResource("5_ek3wl")])
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_ntojy"]
 script = ExtResource("2_ff4vp")
-title = ""
 Img = ExtResource("5_kdmin")
 SFX_s = Array[AudioStream]([ExtResource("7_ntojy")])
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_5pp8k"]
 script = ExtResource("2_ff4vp")
-title = ""
 Img = ExtResource("6_ff4vp")
-SFX_s = Array[AudioStream]([])
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_kjhh3"]
 script = ExtResource("2_ff4vp")
-title = ""
 Img = ExtResource("7_3t43m")
-SFX_s = Array[AudioStream]([])
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_v0eyf"]
 script = ExtResource("2_ff4vp")
 title = "Fin"
 Img = ExtResource("10_kjhh3")
-SFX_s = Array[AudioStream]([])
 sfx_loop = ExtResource("11_vdkjn")
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_ot5fi"]
 script = ExtResource("2_ff4vp")
-title = ""
 Img = ExtResource("12_vdkjn")
-SFX_s = Array[AudioStream]([])
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5pp8k"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kjhh3"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vdkjn"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ot5fi"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v0eyf"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ot5fi"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vdkjn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kjhh3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5pp8k"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ff4vp"]
 shader = ExtResource("11_l8ntj")
@@ -103,7 +92,7 @@ shader_parameter/clock_feather = 0.0
 shader_parameter/progress = 1.23
 shader_parameter/progress_bias = Vector2(0, 0)
 
-[node name="Story_manager" type="Control" node_paths=PackedStringArray("panel_story")]
+[node name="Story_manager" type="Control" unique_id=132332449 node_paths=PackedStringArray("panel_story")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -115,14 +104,14 @@ panel_story = NodePath("Img-Story/IMG_storyboard")
 Pages = Array[ExtResource("2_ff4vp")]([SubResource("Resource_0h83a"), SubResource("Resource_ek3wl"), SubResource("Resource_ntojy"), SubResource("Resource_5pp8k"), SubResource("Resource_kjhh3"), SubResource("Resource_v0eyf"), SubResource("Resource_ot5fi")])
 to_scene = "res://Scenes/main_menu.tscn"
 
-[node name="Buttons" type="CanvasLayer" parent="." node_paths=PackedStringArray("btn_prev", "btn_next", "storyboard")]
+[node name="Buttons" type="CanvasLayer" parent="." unique_id=1451298765 node_paths=PackedStringArray("btn_prev", "btn_next", "storyboard")]
 layer = 4
 script = ExtResource("11_u5jtl")
 btn_prev = NodePath("Btn_prev")
 btn_next = NodePath("Btn_next")
 storyboard = NodePath("..")
 
-[node name="Btn_prev" type="Button" parent="Buttons"]
+[node name="Btn_prev" type="Button" parent="Buttons" unique_id=1108520683]
 self_modulate = Color(0.862745, 0.807843, 0, 1)
 anchors_preset = 4
 anchor_top = 0.5
@@ -131,15 +120,15 @@ offset_top = -15.5
 offset_right = 47.0
 offset_bottom = 15.5
 grow_vertical = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_5pp8k")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_kjhh3")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_vdkjn")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_v0eyf")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ot5fi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v0eyf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vdkjn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_kjhh3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5pp8k")
 icon = ExtResource("9_3t43m")
 script = ExtResource("10_ek3wl")
 
-[node name="Btn_next" type="Button" parent="Buttons"]
+[node name="Btn_next" type="Button" parent="Buttons" unique_id=1219081782]
 self_modulate = Color(0.862745, 0.807843, 0, 1)
 anchors_preset = 6
 anchor_left = 1.0
@@ -151,17 +140,17 @@ offset_top = -15.5
 offset_bottom = 15.5
 grow_horizontal = 0
 grow_vertical = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_5pp8k")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_kjhh3")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_vdkjn")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_v0eyf")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ot5fi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v0eyf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vdkjn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_kjhh3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5pp8k")
 icon = ExtResource("11_ntojy")
 script = ExtResource("10_ek3wl")
 
-[node name="Img-Story" type="CanvasLayer" parent="."]
+[node name="Img-Story" type="CanvasLayer" parent="." unique_id=504644266]
 
-[node name="IMG_storyboard" type="TextureRect" parent="Img-Story"]
+[node name="IMG_storyboard" type="TextureRect" parent="Img-Story" unique_id=1970646145]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -172,14 +161,14 @@ texture = ExtResource("3_3hdmu")
 expand_mode = 3
 stretch_mode = 6
 
-[node name="Music_storyboard" type="Node" parent="."]
+[node name="Music_storyboard" type="Node" parent="." unique_id=1477308742]
 script = ExtResource("12_8n5ii")
 sound = ExtResource("13_x7041")
 
-[node name="EFFECT" type="CanvasLayer" parent="."]
+[node name="EFFECT" type="CanvasLayer" parent="." unique_id=998609881]
 layer = 3
 
-[node name="TextureRect" type="TextureRect" parent="EFFECT"]
+[node name="TextureRect" type="TextureRect" parent="EFFECT" unique_id=1997457783]
 material = SubResource("ShaderMaterial_ff4vp")
 anchors_preset = 15
 anchor_right = 1.0

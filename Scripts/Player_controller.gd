@@ -9,7 +9,7 @@ class_name player_controller
 @export var detect_salto_der :jump_detect_component
 @export var detect_caida_Ref : detect_caida
 @export_group("Sounds")
-@export var jump: AudioStream
+@export var jump: Array[AudioStream]
 @export var sfx_golpes : Array[AudioStream]
 
 func activar_player():
@@ -51,14 +51,11 @@ func salto():
 	if detect_salto_izq.puede_saltar or detect_salto_der.puede_saltar:
 		soft.gravity_scale =0.6
 		if Input.is_action_just_pressed("ui_up"):
-			Audiomanager.play_sfx_oneshot(jump)
+			var sfx_value = randi_range(0,jump.size()-1)
+			Audiomanager.play_sfx_oneshot(jump[sfx_value])
 			var direccion = -transform.y * fuerza_salto
 			linear_velocity = direccion
 			soft.gravity_scale =0.6
-	#else:
-	#	if Input.is_action_just_pressed("ui_down"):
-	#		soft.gravity_scale =5
-			
 func shake_camara():
 	var resultado = randi_range(0,sfx_golpes.size())
 	Audiomanager.play_sfx_oneshot(sfx_golpes[resultado-1])

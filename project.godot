@@ -14,27 +14,31 @@ ss2d/version="3.3.0"
 instance_dock/scene_data_file="res://InstanceDockSceneData.txt"
 instance_dock/preview_resolution=Vector2i(64, 64)
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
-config/name="Short Slime"
+config/name="The Cave"
 config/tags=PackedStringArray("2d", "terminado")
 run/main_scene="uid://du01se7ewy071"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.6", "Forward Plus")
 boot_splash/show_image=false
 config/icon="res://icon.svg"
 
 [autoload]
 
-PhantomCameraManager="*res://addons/phantom_camera/scripts/managers/phantom_camera_manager.gd"
+PhantomCameraManager="*uid://duq6jhf6unyis"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 JuiceManager="*res://Scripts/juice_manager.gd"
 BetterTerrain="*res://addons/better-terrain/BetterTerrain.gd"
 FullscreenControl="*res://addons/fullscreen_control/FullscreenControl.gd"
 SlowMotion="*res://addons/slow_motion/SlowMotion.tscn"
-DebugMenu="*res://addons/debug_menu/debug_menu.tscn"
+DebugMenu="*uid://cggqb75a8w8r"
 Audiomanager="*res://Scenes/Global/Audiomanager.tscn"
 ProcessBoids="*res://addons/boids/process_boids.tscn"
-Shaker="*res://addons/shaker/src/Shaker.gd"
+Shaker="*uid://dfxum02dn6d65"
 SceneManager="*res://Scenes/Global/scene_manager.tscn"
 
 [dialogic]
@@ -82,7 +86,7 @@ window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/InstanceDock/plugin.cfg", "res://addons/Point2D/plugin.cfg", "res://addons/anthonyec.camera_preview/plugin.cfg", "res://addons/debug_menu/plugin.cfg", "res://addons/inspector_tabs/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg", "res://addons/shaker/plugin.cfg", "res://addons/softbody2d/plugin.cfg", "res://addons/window-placement-switcher/plugin.cfg")
+enabled=PackedStringArray("res://addons/InstanceDock/plugin.cfg", "res://addons/Point2D/plugin.cfg", "res://addons/anthonyec.camera_preview/plugin.cfg", "res://addons/debug_menu/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg", "res://addons/shaker/plugin.cfg", "res://addons/softbody2d/plugin.cfg")
 
 [global_group]
 
