@@ -51,13 +51,13 @@ func salto():
 	if detect_salto_izq.puede_saltar or detect_salto_der.puede_saltar:
 		soft.gravity_scale =0.6
 		if Input.is_action_just_pressed("ui_up"):
-			var sfx_value = randi_range(0,jump.size()-1)
-			Audiomanager.play_sfx_oneshot(jump[sfx_value])
+			Audiomanager.play_sfx_oneshot(jump.pick_random())
 			var direccion = -transform.y * fuerza_salto
 			linear_velocity = direccion
 			soft.gravity_scale =0.6
+			
+			
 func shake_camara():
-	var resultado = randi_range(0,sfx_golpes.size())
-	Audiomanager.play_sfx_oneshot(sfx_golpes[resultado-1])
+	Audiomanager.play_sfx_oneshot(sfx_golpes.pick_random())
 	for cada_shaker in shakers:
 		cada_shaker.play_shake()
