@@ -583,7 +583,7 @@ metadata/_local_pose_override_enabled_ = true
 [node name="Bone-19" type="Bone2D" parent="SoftBody2D/Skeleton2D" unique_id=1835554395]
 position = Vector2(97.4728, 99.572)
 rotation = -1.45533
-scale = Vector2(0.9999999, 0.9999999)
+scale = Vector2(0.9999998, 0.9999998)
 rest = Transform2D(0.11521, -0.993341, 0.993341, 0.11521, 97.4728, 99.572)
 auto_calculate_length_and_angle = false
 length = 30.0
