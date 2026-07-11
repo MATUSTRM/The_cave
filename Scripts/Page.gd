@@ -7,7 +7,10 @@ class_name Page
 ##IMAGEN DEL STORYBOARD
 ##tienes que asignar la imagen que quieras
 ##implementar
-@export var Img : Texture
+@export var Imgs : Array[Texture]
+@export_range(0.15,4) var time_frame := 0.15
+@export var loop := true
+
 @export_group("Sound effects")
 ##Solo tiene que asignar los sonidos que quieras
 ## y se reproduciran en la pagina en la que agregaste

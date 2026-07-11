@@ -3,61 +3,48 @@
 [ext_resource type="Script" uid="uid://74382urv8fml" path="res://Scripts/story_manager.gd" id="1_kdmin"]
 [ext_resource type="Script" uid="uid://bd1drdt88u3ys" path="res://Scripts/Page.gd" id="2_ff4vp"]
 [ext_resource type="Texture2D" uid="uid://ddan6385cu2k6" path="res://Story/Backstory/backstory.png" id="3_3hdmu"]
-[ext_resource type="Texture2D" uid="uid://dbcfento0levj" path="res://Story/Backstory/bacsktory2.png" id="4_l8ntj"]
 [ext_resource type="AudioStream" uid="uid://dns5mcb4gpik3" path="res://Sfx/cartoon voices male amused surprised 24.wav" id="5_ek3wl"]
-[ext_resource type="Texture2D" uid="uid://dn4323t0b8v6f" path="res://Story/Backstory/backstory3.png" id="5_kdmin"]
-[ext_resource type="Texture2D" uid="uid://chsvfx2jv5qqj" path="res://Story/Backstory/Backstory4.png" id="6_ff4vp"]
-[ext_resource type="Texture2D" uid="uid://kd1u7coy22rg" path="res://Story/Backstory/backstory5.png" id="7_3t43m"]
 [ext_resource type="AudioStream" uid="uid://3tmhbbmnh8cm" path="res://Sfx/511485__mlaudio__cartoon_wink_magic_sparkle.wav" id="7_ntojy"]
 [ext_resource type="Texture2D" uid="uid://ccxy7f02mksav" path="res://assets/Boton.png" id="9_3t43m"]
 [ext_resource type="Script" uid="uid://cd301lc0q28j" path="res://Scripts/animation.gd" id="10_ek3wl"]
-[ext_resource type="Texture2D" uid="uid://b6unk02por7mq" path="res://Story/1.png" id="10_kjhh3"]
 [ext_resource type="Shader" uid="uid://dvrmxbv6ypxfk" path="res://new_shader.gdshader" id="11_l8ntj"]
 [ext_resource type="Texture2D" uid="uid://bia2tu2giw3mj" path="res://assets/Botonder.png" id="11_ntojy"]
 [ext_resource type="Script" uid="uid://dmqra71jgby31" path="res://Scripts/Buttons_storyboard.gd" id="11_u5jtl"]
 [ext_resource type="AudioStream" uid="uid://bcebg6oocs7yi" path="res://Sfx/ronquido.wav" id="11_vdkjn"]
 [ext_resource type="Script" uid="uid://p51iyp3bg6f2" path="res://Scenes/play_sound.gd" id="12_8n5ii"]
 [ext_resource type="Texture2D" uid="uid://b66ko2v2a0syt" path="res://assets/Shape Template/Square.svg" id="12_kdmin"]
-[ext_resource type="Texture2D" uid="uid://bni84djhdkph0" path="res://assets/fin.png" id="12_vdkjn"]
 [ext_resource type="AudioStream" uid="uid://cmnbepmgp1y1h" path="res://Sfx/Moment storyboard.wav" id="13_x7041"]
 
 [sub_resource type="Resource" id="Resource_0h83a"]
 script = ExtResource("2_ff4vp")
-Img = ExtResource("3_3hdmu")
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_ek3wl"]
 script = ExtResource("2_ff4vp")
-Img = ExtResource("4_l8ntj")
 SFX_s = Array[AudioStream]([ExtResource("5_ek3wl")])
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_ntojy"]
 script = ExtResource("2_ff4vp")
-Img = ExtResource("5_kdmin")
 SFX_s = Array[AudioStream]([ExtResource("7_ntojy")])
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_5pp8k"]
 script = ExtResource("2_ff4vp")
-Img = ExtResource("6_ff4vp")
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_kjhh3"]
 script = ExtResource("2_ff4vp")
-Img = ExtResource("7_3t43m")
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_v0eyf"]
 script = ExtResource("2_ff4vp")
 title = "Fin"
-Img = ExtResource("10_kjhh3")
 sfx_loop = ExtResource("11_vdkjn")
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_ot5fi"]
 script = ExtResource("2_ff4vp")
-Img = ExtResource("12_vdkjn")
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ot5fi"]

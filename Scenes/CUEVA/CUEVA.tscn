@@ -1616,7 +1616,7 @@ follow_viewport_enabled = true
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="BACKGROUND" unique_id=1329780293]
 position = Vector2(4643, -1817)
-amount = 700
+amount = 400
 texture = ExtResource("18_fu0c1")
 lifetime = 6.0
 fixed_fps = 30
@@ -2130,8 +2130,8 @@ texture = ExtResource("31_18rgb")
 
 [node name="Shape2" type="Sprite2D" parent="BACKGROUND/Parallax2D3" unique_id=1758961802]
 self_modulate = Color(0.03529412, 0.047058824, 0.05882353, 1)
-position = Vector2(4950.5, -2529.5)
-scale = Vector2(5.5538735, 4.2607055)
+position = Vector2(5819, -3264.0002)
+scale = Vector2(7.1006236, 6.1108313)
 texture = ExtResource("32_yd2v3")
 
 [node name="Triangle22" type="Sprite2D" parent="BACKGROUND/Parallax2D3" unique_id=1336908463]

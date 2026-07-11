@@ -1,8 +1,8 @@
-[gd_scene load_steps=43 format=3 uid="uid://dawjanb2x5prx"]
+[gd_scene format=3 uid="uid://dawjanb2x5prx"]
 
-[ext_resource type="Script" uid="uid://74382urv8fml" path="res://Scripts/story_manager.gd" id="1_d5le8"]
+[ext_resource type="Script" uid="uid://hqx7a5h8xmw0" path="res://Scripts/story_manager.gd" id="1_d5le8"]
 [ext_resource type="Texture2D" uid="uid://b6unk02por7mq" path="res://Story/1.png" id="1_vg1qc"]
-[ext_resource type="Script" uid="uid://bd1drdt88u3ys" path="res://Scripts/Page.gd" id="2_xqvg5"]
+[ext_resource type="Script" uid="uid://cc48ah5fvwqtl" path="res://Scripts/Page.gd" id="2_xqvg5"]
 [ext_resource type="Texture2D" uid="uid://bxrke7ri44p2p" path="res://Story/2.png" id="3_a7cy6"]
 [ext_resource type="AudioStream" uid="uid://bcebg6oocs7yi" path="res://Sfx/ronquido.wav" id="4_5n1b4"]
 [ext_resource type="Texture2D" uid="uid://by1esalfcyo2s" path="res://Story/3.png" id="4_gfmkq"]
@@ -20,79 +20,75 @@
 [sub_resource type="Resource" id="Resource_0h83a"]
 script = ExtResource("2_xqvg5")
 title = "1"
-Img = ExtResource("1_vg1qc")
-SFX_s = Array[AudioStream]([])
+Imgs = Array[Texture]([ExtResource("1_vg1qc")])
 sfx_loop = ExtResource("4_5n1b4")
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_xqvg5"]
 script = ExtResource("2_xqvg5")
-title = ""
-Img = ExtResource("3_a7cy6")
+title = "PART 2"
+Imgs = Array[Texture]([ExtResource("3_a7cy6")])
 SFX_s = Array[AudioStream]([ExtResource("5_0h83a")])
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_im4bj"]
 script = ExtResource("2_xqvg5")
-title = ""
-Img = ExtResource("4_gfmkq")
-SFX_s = Array[AudioStream]([])
+Imgs = Array[Texture]([ExtResource("4_gfmkq")])
 sfx_loop = ExtResource("8_a04ft")
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_n5a1j"]
 script = ExtResource("2_xqvg5")
-title = ""
-Img = ExtResource("5_xqvg5")
+Imgs = Array[Texture]([ExtResource("5_xqvg5")])
 SFX_s = Array[AudioStream]([ExtResource("8_5n1b4")])
 metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_js4pu"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g0msx"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_su8kv"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qhqdf"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l8qeo"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x2dcd"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_skf4n"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g5apw"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vyml3"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lf5fl"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3j5lh"]
 content_margin_left = 5.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lf5fl"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vyml3"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g0msx"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g5apw"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yvspo"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_skf4n"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dlg82"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x2dcd"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5sqyx"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l8qeo"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ss6dy"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qhqdf"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ghqh5"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_su8kv"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_25kp5"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_idna5"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_00av7"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ldbv3"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_67yyf"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_js4pu"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xg1im"]
 
-[node name="Story_manager" type="Control" node_paths=PackedStringArray("panel_story")]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_67yyf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ldbv3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_00av7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_idna5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_25kp5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ghqh5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ss6dy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5sqyx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dlg82"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yvspo"]
+
+[node name="Story_manager" type="Control" unique_id=1637108537 node_paths=PackedStringArray("panel_story")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -102,16 +98,17 @@ grow_vertical = 2
 script = ExtResource("1_d5le8")
 panel_story = NodePath("Img-Story/IMG_storyboard")
 Pages = Array[ExtResource("2_xqvg5")]([SubResource("Resource_0h83a"), SubResource("Resource_xqvg5"), SubResource("Resource_im4bj"), SubResource("Resource_n5a1j")])
+time_frame = 0.165
 to_scene = "res://Scenes/CUEVA/CUEVA.tscn"
 
-[node name="Buttons" type="CanvasLayer" parent="." node_paths=PackedStringArray("btn_prev", "btn_next", "storyboard")]
+[node name="Buttons" type="CanvasLayer" parent="." unique_id=1890976519 node_paths=PackedStringArray("btn_prev", "btn_next", "storyboard")]
 layer = 2
 script = ExtResource("6_gfmkq")
 btn_prev = NodePath("Btn_prev")
 btn_next = NodePath("Btn_next")
 storyboard = NodePath("..")
 
-[node name="Btn_prev" type="Button" parent="Buttons"]
+[node name="Btn_prev" type="Button" parent="Buttons" unique_id=471581321]
 self_modulate = Color(0.861227, 0.807189, 0, 1)
 anchors_preset = 4
 anchor_top = 0.5
@@ -120,21 +117,21 @@ offset_top = -128.0
 offset_right = 256.0
 offset_bottom = 128.0
 grow_vertical = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_js4pu")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_su8kv")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_qhqdf")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_l8qeo")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_x2dcd")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_skf4n")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_g5apw")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_vyml3")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_3j5lh")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_lf5fl")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_g0msx")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_lf5fl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3j5lh")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_vyml3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_g5apw")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_skf4n")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_x2dcd")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_l8qeo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_qhqdf")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_su8kv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_js4pu")
 icon = ExtResource("12_su8kv")
 script = ExtResource("13_g0msx")
 
-[node name="Btn_next" type="Button" parent="Buttons"]
+[node name="Btn_next" type="Button" parent="Buttons" unique_id=1502432095]
 self_modulate = Color(0.861227, 0.807189, 0, 1)
 anchors_preset = 6
 anchor_left = 1.0
@@ -146,23 +143,23 @@ offset_top = -128.0
 offset_bottom = 128.0
 grow_horizontal = 0
 grow_vertical = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_yvspo")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_dlg82")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_5sqyx")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ss6dy")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ghqh5")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_25kp5")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_idna5")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_00av7")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_ldbv3")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_67yyf")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_xg1im")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_67yyf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ldbv3")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_00av7")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_idna5")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_25kp5")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ghqh5")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ss6dy")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5sqyx")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_dlg82")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yvspo")
 icon = ExtResource("13_qhqdf")
 script = ExtResource("13_g0msx")
 
-[node name="Img-Story" type="CanvasLayer" parent="."]
+[node name="Img-Story" type="CanvasLayer" parent="." unique_id=75953026]
 
-[node name="IMG_storyboard" type="TextureRect" parent="Img-Story"]
+[node name="IMG_storyboard" type="TextureRect" parent="Img-Story" unique_id=261744519]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -173,6 +170,6 @@ texture = ExtResource("1_vg1qc")
 expand_mode = 3
 stretch_mode = 6
 
-[node name="Music_storyboard" type="Node" parent="."]
+[node name="Music_storyboard" type="Node" parent="." unique_id=1932377222]
 script = ExtResource("9_n5a1j")
 sound = ExtResource("10_5n1b4")

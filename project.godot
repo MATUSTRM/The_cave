@@ -86,7 +86,7 @@ window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/InstanceDock/plugin.cfg", "res://addons/Point2D/plugin.cfg", "res://addons/anthonyec.camera_preview/plugin.cfg", "res://addons/debug_menu/plugin.cfg", "res://addons/parallax2d_preview/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg", "res://addons/shaker/plugin.cfg", "res://addons/softbody2d/plugin.cfg")
+enabled=PackedStringArray("res://addons/InstanceDock/plugin.cfg", "res://addons/Point2D/plugin.cfg", "res://addons/anthonyec.camera_preview/plugin.cfg", "res://addons/debug_menu/plugin.cfg", "res://addons/fancy_editor_sounds/plugin.cfg", "res://addons/parallax2d_preview/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg", "res://addons/shaker/plugin.cfg", "res://addons/softbody2d/plugin.cfg")
 
 [global_group]
 
