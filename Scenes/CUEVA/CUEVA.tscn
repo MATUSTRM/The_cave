@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://c0rw6i1wtp35l" path="res://Scenes/PLAYER.tscn" id="18_epekd"]
 [ext_resource type="Texture2D" uid="uid://c3p3r0yq8r5os" path="res://assets/Shape Template/Circle.svg" id="18_fu0c1"]
 [ext_resource type="Script" uid="uid://bvaovdt7txopk" path="res://Scenes/CUEVA/Exit.gd" id="20_7bi7i"]
+[ext_resource type="Texture2D" uid="uid://bnlc83amookw4" path="res://assets/Shape Template/shape2.svg" id="20_yd2v3"]
 [ext_resource type="AudioStream" uid="uid://bnugef72xjv0t" path="res://Sfx/Ambiance_Cave_Deep_Loop_Stereo.wav" id="21_n5is8"]
 [ext_resource type="Texture2D" uid="uid://7etnmfie3lsw" path="res://assets/Shape Template/shape5.svg" id="22_5iyy6"]
 [ext_resource type="Script" uid="uid://c5mycihb7qm6v" path="res://Scripts/Detect_input.gd" id="23_g0ggt"]
@@ -31,7 +32,6 @@
 [ext_resource type="Texture2D" uid="uid://bcmyh5w2a0f8l" path="res://assets/Shape Template/5_line.svg" id="30_vi3xy"]
 [ext_resource type="Texture2D" uid="uid://cvu01o8difnyy" path="res://assets/Shape Template/shape1.png" id="31_18rgb"]
 [ext_resource type="Texture2D" uid="uid://dv5xs2vnomnmo" path="res://assets/Shape Template/shape4.png" id="31_v4k62"]
-[ext_resource type="Texture2D" uid="uid://brwh168cqvcjg" path="res://assets/Shape Template/shape2.png" id="32_yd2v3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_556uy"]
 size = Vector2(190, 294)
@@ -149,6 +149,9 @@ z_index = -10
 [sub_resource type="Resource" id="Resource_xgcdd"]
 script = ExtResource("16_5iyy6")
 fill_textures = Array[Texture2D]([ExtResource("2_7bi7i")])
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v4k62"]
+load_path = "res://.godot/imported/shape2.png-da500bd8e9c6e18a9751b16a937643a4.ctex"
 
 [sub_resource type="Gradient" id="Gradient_yd2v3"]
 offsets = PackedFloat32Array(0, 0.641, 0.7)
@@ -2132,24 +2135,23 @@ texture = ExtResource("31_18rgb")
 
 [node name="Shape2" type="Sprite2D" parent="BACKGROUND/Parallax2D3" unique_id=1758961802]
 self_modulate = Color(0.03529412, 0.047058824, 0.05882353, 1)
-position = Vector2(5819, -3264.0002)
-scale = Vector2(7.1006236, 6.1108313)
-texture = ExtResource("32_yd2v3")
-metadata/_edit_lock_ = true
+position = Vector2(5103.5, -3116.0002)
+scale = Vector2(6.164737, 6.2921915)
+texture = ExtResource("20_yd2v3")
 
 [node name="Triangle22" type="Sprite2D" parent="BACKGROUND/Parallax2D3" unique_id=1336908463]
 self_modulate = Color(0.03529412, 0.047058824, 0.05882353, 0.91764706)
 position = Vector2(745.0001, -3181)
 rotation = 2.8626304
 scale = Vector2(0.8431264, 1.4099786)
-texture = ExtResource("32_yd2v3")
+texture = SubResource("CompressedTexture2D_v4k62")
 
 [node name="Triangle23" type="Sprite2D" parent="BACKGROUND/Parallax2D3" unique_id=2000022463]
 self_modulate = Color(0.03529412, 0.047058824, 0.05882353, 0.91764706)
 position = Vector2(1287.0001, -3874.0002)
 rotation = 1.4742016
 scale = Vector2(0.8431265, 1.4099786)
-texture = ExtResource("32_yd2v3")
+texture = SubResource("CompressedTexture2D_v4k62")
 
 [node name="Point2D" type="PointLight2D" parent="." unique_id=479109447]
 position = Vector2(5630, -2191)

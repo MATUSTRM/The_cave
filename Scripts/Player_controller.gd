@@ -11,7 +11,7 @@ class_name player_controller
 @export_group("Sounds")
 @export var jump: Array[AudioStream]
 @export var sfx_golpes : Array[AudioStream]
-
+@export var animation :AnimationPlayer
 func activar_player():
 	player = true
 
@@ -52,6 +52,7 @@ func salto():
 		soft.gravity_scale =0.6
 		if Input.is_action_pressed("ui_up") and fuerza_salto < 9600:
 			print("PREPARANDO SALTO:", fuerza_salto)
+			animation.play("Preparing")
 			aumentar_fuerza()
 		if  Input.is_action_just_released("ui_up"):
 			print("SALTO!!")
@@ -59,7 +60,7 @@ func salto():
 			var direccion = -transform.y * fuerza_salto
 			linear_velocity = direccion
 			reset_fuerza()
-			
+			animation.play("Idle")
 			
 func aumentar_fuerza():
 	fuerza_salto += 300;

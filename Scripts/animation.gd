@@ -12,11 +12,11 @@ func play_animation():
 		tween.kill()
 	
 	tween = create_tween()
-	tween.tween_property(self, "scale", Vector2(0.8, 0.8), 0.1)
+	tween.tween_property(self, "scale", Vector2(0.4, 0.4), 0.1)
 
 func stop_animation():
 	if tween:
 		tween.kill()
 	
 	tween = create_tween()
-	tween.tween_property(self, "scale", Vector2(1, 1), 0.1)
+	tween.tween_property(self, "scale", Vector2(0.6, 0.6), 0.1)

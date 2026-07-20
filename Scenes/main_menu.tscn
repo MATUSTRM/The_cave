@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://du01se7ewy071"]
 
 [ext_resource type="Script" uid="uid://bbd54jjw57wew" path="res://Scripts/Play.gd" id="1_28flt"]
-[ext_resource type="Texture2D" uid="uid://q0i8sgjtiu41" path="res://assets/Play btn.png" id="1_yhxw7"]
+[ext_resource type="Texture2D" uid="uid://cvm7vldcqqnd1" path="res://assets/play.svg" id="1_yhxw7"]
 [ext_resource type="Texture2D" uid="uid://bfuh2nh5a46eh" path="res://assets/The cave_FORGROUND.svg" id="2_ce3w2"]
 [ext_resource type="Texture2D" uid="uid://b66ko2v2a0syt" path="res://assets/Shape Template/Square.svg" id="2_cp0ys"]
 [ext_resource type="Texture2D" uid="uid://itffioelj3qs" path="res://assets/The cave_BACKGROUND.svg" id="2_opfnp"]

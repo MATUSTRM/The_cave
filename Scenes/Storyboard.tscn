@@ -13,35 +13,31 @@
 [ext_resource type="AudioStream" uid="uid://bcgv1loevpjnd" path="res://Sfx/Salida.wav" id="8_a04ft"]
 [ext_resource type="Script" uid="uid://p51iyp3bg6f2" path="res://Scenes/play_sound.gd" id="9_n5a1j"]
 [ext_resource type="AudioStream" uid="uid://cmnbepmgp1y1h" path="res://Sfx/Moment storyboard.wav" id="10_5n1b4"]
-[ext_resource type="Texture2D" uid="uid://ccxy7f02mksav" path="res://assets/Boton.png" id="12_su8kv"]
+[ext_resource type="Texture2D" uid="uid://khohcdtg28fj" path="res://assets/Flecha.svg" id="12_qhqdf"]
 [ext_resource type="Script" uid="uid://cd301lc0q28j" path="res://Scripts/animation.gd" id="13_g0msx"]
-[ext_resource type="Texture2D" uid="uid://bia2tu2giw3mj" path="res://assets/Botonder.png" id="13_qhqdf"]
+[ext_resource type="Texture2D" uid="uid://c07bfve73kme1" path="res://assets/Flechad.svg" id="14_g0msx"]
 
 [sub_resource type="Resource" id="Resource_0h83a"]
 script = ExtResource("2_xqvg5")
 title = "1"
 Imgs = Array[Texture]([ExtResource("1_vg1qc")])
 sfx_loop = ExtResource("4_5n1b4")
-metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_xqvg5"]
 script = ExtResource("2_xqvg5")
 title = "PART 2"
 Imgs = Array[Texture]([ExtResource("3_a7cy6")])
 SFX_s = Array[AudioStream]([ExtResource("5_0h83a")])
-metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_im4bj"]
 script = ExtResource("2_xqvg5")
 Imgs = Array[Texture]([ExtResource("4_gfmkq")])
 sfx_loop = ExtResource("8_a04ft")
-metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_n5a1j"]
 script = ExtResource("2_xqvg5")
 Imgs = Array[Texture]([ExtResource("5_xqvg5")])
 SFX_s = Array[AudioStream]([ExtResource("8_5n1b4")])
-metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g0msx"]
 
@@ -117,6 +113,8 @@ offset_top = -128.0
 offset_right = 256.0
 offset_bottom = 128.0
 grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+pivot_offset = Vector2(0, 128)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_g0msx")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_lf5fl")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_3j5lh")
@@ -128,7 +126,7 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_l8qeo"
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_qhqdf")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_su8kv")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_js4pu")
-icon = ExtResource("12_su8kv")
+icon = ExtResource("12_qhqdf")
 script = ExtResource("13_g0msx")
 
 [node name="Btn_next" type="Button" parent="Buttons" unique_id=1502432095]
@@ -143,6 +141,8 @@ offset_top = -128.0
 offset_bottom = 128.0
 grow_horizontal = 0
 grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+pivot_offset = Vector2(256, 128)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_xg1im")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_67yyf")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_ldbv3")
@@ -154,7 +154,7 @@ theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ss6dy"
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_5sqyx")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_dlg82")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yvspo")
-icon = ExtResource("13_qhqdf")
+icon = ExtResource("14_g0msx")
 script = ExtResource("13_g0msx")
 
 [node name="Img-Story" type="CanvasLayer" parent="." unique_id=75953026]

@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://kol6k5y6rb8a" path="res://addons/softbody2d/softbody2d.gd" id="4_na4xj"]
 [ext_resource type="AudioStream" uid="uid://digkodsh501k3" path="res://Sfx/impact_reverb2.wav" id="4_qi1va"]
 [ext_resource type="Texture2D" uid="uid://wogpcfw27n87" path="res://assets/path1.svg" id="8_kctci"]
+[ext_resource type="Texture2D" uid="uid://43or25l2okyj" path="res://assets/path4.svg" id="9_qi1va"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_hifu5"]
 friction = 300.0
@@ -29,7 +30,7 @@ tags = {
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xhtok"]
-radius = 72.56
+radius = 57.81
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8od7v"]
 
@@ -213,50 +214,38 @@ resource_name = "Idle"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D3:visible")
+tracks/0/path = NodePath("Impact_eyes:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [true]
+"values": [false]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Sprite2D2:visible")
+tracks/1/path = NodePath("Preparing eyes:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [true]
+"values": [false]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Impact_eyes/Sprite2D:visible")
+tracks/2/path = NodePath("Idle eyes (ALWAYS VISIBLE):visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [false]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Impact_eyes/Sprite2D4:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_ln8fu"]
@@ -265,7 +254,35 @@ length = 0.4
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D2:visible")
+tracks/0/path = NodePath("Impact_eyes:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Idle eyes (ALWAYS VISIBLE):visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_cddki"]
+resource_name = "Preparing"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Impact_eyes:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -277,7 +294,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Sprite2D3:visible")
+tracks/1/path = NodePath("Idle eyes (ALWAYS VISIBLE):visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -289,22 +306,10 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Impact_eyes/Sprite2D:visible")
+tracks/2/path = NodePath("Preparing eyes:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Impact_eyes/Sprite2D4:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -316,46 +321,34 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D2:visible")
+tracks/0/path = NodePath("Impact_eyes:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [false]
+"values": [true]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Sprite2D3:visible")
+tracks/1/path = NodePath("Idle eyes (ALWAYS VISIBLE):visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [false]
+"values": [true]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Impact_eyes/Sprite2D:visible")
+tracks/2/path = NodePath("Preparing eyes:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Impact_eyes/Sprite2D4:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -366,10 +359,11 @@ tracks/3/keys = {
 _data = {
 &"Idle": SubResource("Animation_qi1va"),
 &"Impact": SubResource("Animation_ln8fu"),
+&"Preparing": SubResource("Animation_cddki"),
 &"RESET": SubResource("Animation_26wwa")
 }
 
-[node name="central_RigidBody2D" type="RigidBody2D" unique_id=1391459850 node_paths=PackedStringArray("soft", "detect_salto_izq", "detect_salto_der", "detect_caida_Ref")]
+[node name="central_RigidBody2D" type="RigidBody2D" unique_id=1391459850 node_paths=PackedStringArray("soft", "detect_salto_izq", "detect_salto_der", "detect_caida_Ref", "animation")]
 collision_layer = 2
 collision_mask = 0
 mass = 0.185
@@ -381,10 +375,9 @@ detect_salto_der = NodePath("Detect_salto2")
 detect_caida_Ref = NodePath("detect_caida")
 jump = Array[AudioStream]([SubResource("AudioStreamWAV_kctci"), SubResource("AudioStreamWAV_na4xj")])
 sfx_golpes = Array[AudioStream]([ExtResource("3_kctci"), ExtResource("4_qi1va")])
+animation = NodePath("AnimationPlayer")
 
 [node name="detect_caida" type="Area2D" parent="." unique_id=1054282132 node_paths=PackedStringArray("rb", "player", "animation")]
-visible = false
-position = Vector2(2, -1)
 collision_layer = 0
 script = ExtResource("1_lvlad")
 rb = NodePath("..")
@@ -2128,32 +2121,32 @@ angular_limit_enabled = true
 angular_limit_lower = -78.4
 angular_limit_upper = 46.3
 
-[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=287328057]
-visible = false
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1602565399]
+libraries/ = SubResource("AnimationLibrary_cddki")
+autoplay = &"Idle"
+
+[node name="Idle eyes (ALWAYS VISIBLE)" type="Node2D" parent="." unique_id=602759305]
+
+[node name="Sprite2D2" type="Sprite2D" parent="Idle eyes (ALWAYS VISIBLE)" unique_id=287328057]
 clip_children = 2
 position = Vector2(27, -27)
 scale = Vector2(0.273064, 0.273064)
 texture = ExtResource("3_6yb2h")
 
-[node name="Sprite2D3" type="Sprite2D" parent="Sprite2D2" unique_id=1067751579]
+[node name="Sprite2D3" type="Sprite2D" parent="Idle eyes (ALWAYS VISIBLE)/Sprite2D2" unique_id=1067751579]
 self_modulate = Color(0, 0, 0, 1)
 scale = Vector2(0.666667, 0.666667)
 texture = ExtResource("3_6yb2h")
 
-[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1809532306]
-visible = false
+[node name="Sprite2D3" type="Sprite2D" parent="Idle eyes (ALWAYS VISIBLE)" unique_id=1809532306]
 position = Vector2(-23, -27)
 scale = Vector2(0.273064, 0.273064)
 texture = ExtResource("3_6yb2h")
 
-[node name="Sprite2D3" type="Sprite2D" parent="Sprite2D3" unique_id=1336844252]
+[node name="Sprite2D3" type="Sprite2D" parent="Idle eyes (ALWAYS VISIBLE)/Sprite2D3" unique_id=1336844252]
 self_modulate = Color(0, 0, 0, 1)
 scale = Vector2(0.666667, 0.666667)
 texture = ExtResource("3_6yb2h")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1602565399]
-libraries/ = SubResource("AnimationLibrary_cddki")
-autoplay = &"Idle"
 
 [node name="Impact_eyes" type="Node2D" parent="." unique_id=947152882]
 z_index = 1
@@ -2169,4 +2162,20 @@ texture_filter = 1
 position = Vector2(23, -22)
 scale = Vector2(0.55999994, 0.56000006)
 texture = ExtResource("8_kctci")
+flip_h = true
+
+[node name="Preparing eyes" type="Node2D" parent="." unique_id=1167896764]
+position = Vector2(0, -10)
+
+[node name="Path2" type="Sprite2D" parent="Preparing eyes" unique_id=288935543]
+position = Vector2(-23, -18.999996)
+rotation = 0.090757124
+scale = Vector2(0.55714285, 0.55714285)
+texture = ExtResource("9_qi1va")
+
+[node name="Path3" type="Sprite2D" parent="Preparing eyes" unique_id=1002453018]
+position = Vector2(26.000002, -19)
+rotation = -0.10646509
+scale = Vector2(0.55714285, 0.55714285)
+texture = ExtResource("9_qi1va")
 flip_h = true

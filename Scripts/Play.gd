@@ -15,12 +15,12 @@ func _process(delta: float) -> void:
 	pass
 
 func on_button_down():
-	SceneManager.change_scene(go_to)
 	play_animation()
 	pass
 
 func on_button_up():
 	stop_animation()
+	SceneManager.change_scene(go_to)
 	pass
 
 func play_animation():
@@ -28,11 +28,11 @@ func play_animation():
 		tween.kill()
 	
 	tween = create_tween()
-	tween.tween_property(self, "scale", Vector2(0.8, 0.8), 0.1)
+	tween.tween_property(self, "scale", Vector2(0.8, 0.8), 0.05)
 
 func stop_animation():
 	if tween:
 		tween.kill()
 	
 	tween = create_tween()
-	tween.tween_property(self, "scale", Vector2(1, 1), 0.1)
+	tween.tween_property(self, "scale", Vector2(1, 1), 0.05)

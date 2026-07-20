@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="1123"
+   height="794"
+   viewBox="0 0 1123 794"
+   sodipodi:docname="shape2.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="2.1460957"
+     inkscape:cx="479.70833"
+     inkscape:cy="603.88732"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1"
+     inkscape:clip-to-page="true" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1"
+     style="display:inline">
+    <path
+       id="path1"
+       style="fill:#ffffff;fill-opacity:1"
+       d="M 0 0 L 0 794 L 719.5293 794 L 785.49219 742.96094 L 871.16016 698.14844 L 966.71094 699.94727 L 985.82031 794 L 1123 794 L 1123 0 L 0 0 z M 905.83008 169.60938 L 886.25977 384.88477 L 688.33203 354.46484 L 648.61914 279.57812 L 684.0332 171.47461 L 763.24609 185.45312 L 905.83008 169.60938 z M 246.02734 190.11328 L 330.83398 205.95508 L 457.57422 229.25391 L 383.95312 353.19922 L 211.54688 307.53516 L 246.02734 190.11328 z M 651.4668 468.10938 L 701.25977 468.10938 L 789.66602 470.14062 L 851.6543 503.67578 L 832.3457 572.77539 L 711.42188 629.68164 L 689.06641 562.61328 L 628.0957 567.69336 L 651.4668 468.10938 z M 300.2168 469.79102 L 341.37891 496.10156 L 350.59961 553.64062 L 423.09375 556.35938 L 312.19531 628.11719 L 202.22852 587.11328 L 270.25781 510.69531 L 300.2168 469.79102 z M 544.01172 648.1543 L 569.40625 709.66016 C 569.40625 709.66016 391.64201 705.93221 391.875 704.06836 C 392.10798 702.20451 417.73438 659.33594 417.73438 659.33594 C 417.73438 659.33594 487.39676 660.50112 488.0957 661.66602 C 488.79464 662.83093 500.90932 681.4696 502.07422 680.30469 C 503.23913 679.13978 544.01172 648.1543 544.01172 648.1543 z " />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Image 1"
+     style="display:inline" />
+</svg>

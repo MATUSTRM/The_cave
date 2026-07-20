@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brwh168cqvcjg"
-path="res://.godot/imported/shape2.png-da500bd8e9c6e18a9751b16a937643a4.ctex"
+uid="uid://c07bfve73kme1"
+path="res://.godot/imported/Flechad.svg-a0fe070d0f3f9f37da3a82ac055e99ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Shape Template/shape2.png"
-dest_files=["res://.godot/imported/shape2.png-da500bd8e9c6e18a9751b16a937643a4.ctex"]
+source_file="res://assets/Flechad.svg"
+dest_files=["res://.godot/imported/Flechad.svg-a0fe070d0f3f9f37da3a82ac055e99ff.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
