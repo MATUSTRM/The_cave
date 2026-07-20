@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://yne0u0n1x5tt"]
+
+[ext_resource type="Script" uid="uid://tpuwoumdafp2" path="res://addons/photo_camera_2d/photo_2D.gd" id="1_gkn13"]
+[ext_resource type="AudioStream" uid="uid://b4pts438pl1qf" path="res://addons/photo_camera_2d/zoom.wav" id="2_blpu3"]
+[ext_resource type="AudioStream" uid="uid://citdwqk84ksjh" path="res://addons/photo_camera_2d/Photo .wav" id="3_ii4kw"]
+[ext_resource type="AudioStream" uid="uid://bj5hlpg6w43k7" path="res://addons/photo_camera_2d/rotate.wav" id="4_iu1y1"]
+[ext_resource type="Script" uid="uid://brfwj02d4x640" path="res://addons/photo_camera_2d/grid.gd" id="5_2c7md"]
+
+[node name="Photocamera2D4" type="Node2D" unique_id=500824188]
+script = ExtResource("1_gkn13")
+roll_max = 60.0
+roll_smooth = 11.07
+zoom_sound = ExtResource("2_blpu3")
+photo_sound = ExtResource("3_ii4kw")
+rotation_sound = ExtResource("4_iu1y1")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=679249954]
+
+[node name="Effect" type="Node" parent="." unique_id=446744314]
+
+[node name="Flash" type="ColorRect" parent="Effect" unique_id=1985418663]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Grid" type="CanvasLayer" parent="Effect" unique_id=1965053012]
+visible = false
+
+[node name="GridOverlay" type="Control" parent="Effect/Grid" unique_id=93486335]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("5_2c7md")
+
+[node name="Letterbox" type="CanvasLayer" parent="Effect" unique_id=1081503407]
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=311890]
+layer = 145
+
+[node name="MarginContainer" type="MarginContainer" parent="UI" unique_id=696556779]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 980
+
+[node name="Control" type="Control" parent="UI/MarginContainer" unique_id=422681576]
+layout_mode = 2
+
+[node name="panel" type="Panel" parent="UI/MarginContainer/Control" unique_id=415908893]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MarginContainer/Control/panel" unique_id=1557637732]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 4
+
+[node name="zoom Label" type="Label" parent="UI/MarginContainer/Control/panel/VBoxContainer" unique_id=1026126300]
+layout_mode = 2
+text = "Zoom"
+horizontal_alignment = 1
+
+[node name="ZoomSlider" type="HSlider" parent="UI/MarginContainer/Control/panel/VBoxContainer" unique_id=838711280]
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+
+[node name="rotation Label" type="Label" parent="UI/MarginContainer/Control/panel/VBoxContainer" unique_id=354306221]
+layout_mode = 2
+text = "Rotation"
+horizontal_alignment = 1
+
+[node name="RotationSlider" type="HSlider" parent="UI/MarginContainer/Control/panel/VBoxContainer" unique_id=1512134516]
+layout_mode = 2
+min_value = -100.0
+
+[node name="slider Label" type="Label" parent="UI/MarginContainer/Control/panel/VBoxContainer" unique_id=1064986122]
+layout_mode = 2
+text = "Roll"
+horizontal_alignment = 1
+
+[node name="RollSlider" type="HSlider" parent="UI/MarginContainer/Control/panel/VBoxContainer" unique_id=1464586316]
+layout_mode = 2
+
+[node name="PhotoButton" type="Button" parent="UI/MarginContainer/Control/panel/VBoxContainer" unique_id=1960043325]
+layout_mode = 2
+text = "Take Photo"
+
+[node name="GridToggle" type="CheckButton" parent="UI/MarginContainer/Control/panel/VBoxContainer" unique_id=1268795086]
+layout_mode = 2
+text = "Grid"
+
+[node name="Letterbox" type="OptionButton" parent="UI/MarginContainer/Control/panel/VBoxContainer" unique_id=1896663058]
+layout_mode = 2
+
+[node name="Preset" type="HBoxContainer" parent="UI/MarginContainer/Control/panel/VBoxContainer" unique_id=628811511]
+layout_mode = 2
+
+[node name="HUDLabel" type="Label" parent="UI" unique_id=599495266]
+offset_left = -135.0
+offset_top = 56.0
+offset_right = -95.0
+offset_bottom = 79.0
+
+[node name="Letterbox" type="CanvasLayer" parent="." unique_id=318442477]
+layer = 9
+
+[node name="TopBar" type="ColorRect" parent="Letterbox" unique_id=1825457553]
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+color = Color(0, 0, 0, 1)
+
+[node name="BottomBar" type="ColorRect" parent="Letterbox" unique_id=22149952]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0, 0, 0, 1)

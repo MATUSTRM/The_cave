@@ -1,7 +1,7 @@
 extends RigidBody2D
 class_name player_controller
 @export var velocidad: float = 300
-@export var fuerza_salto: float = 300
+@export var fuerza_salto: float = 1500
 @export var  player: bool
 @export var soft : SoftBody2D
 @export var shakers: Array[ShakerComponent2D]
@@ -21,7 +21,7 @@ func desactivar_player():
 func _ready() -> void:
 	detect_caida_Ref.cayo.connect(shake_camara)
 
-
+	
 func _physics_process(delta: float) -> void:
 	if player:
 		movimiento()
@@ -50,13 +50,23 @@ func movimiento():
 func salto():
 	if detect_salto_izq.puede_saltar or detect_salto_der.puede_saltar:
 		soft.gravity_scale =0.6
-		if Input.is_action_just_pressed("ui_up"):
+		if Input.is_action_pressed("ui_up") and fuerza_salto < 9600:
+			print("PREPARANDO SALTO:", fuerza_salto)
+			aumentar_fuerza()
+		if  Input.is_action_just_released("ui_up"):
+			print("SALTO!!")
 			Audiomanager.play_sfx_oneshot(jump.pick_random())
 			var direccion = -transform.y * fuerza_salto
 			linear_velocity = direccion
-			soft.gravity_scale =0.6
+			reset_fuerza()
 			
 			
+func aumentar_fuerza():
+	fuerza_salto += 300;
+	
+func reset_fuerza():
+	fuerza_salto = 1500
+	
 func shake_camara():
 	Audiomanager.play_sfx_oneshot(sfx_golpes.pick_random())
 	for cada_shaker in shakers:
