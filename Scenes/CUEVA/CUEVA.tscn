@@ -4,10 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://b66ko2v2a0syt" path="res://assets/Shape Template/Square.svg" id="2_7bi7i"]
 [ext_resource type="Script" uid="uid://clm2earkuy3mb" path="res://Scripts/Viento.gd" id="2_556uy"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="3_556uy"]
+[ext_resource type="Texture2D" uid="uid://ci6cq6laptrk2" path="res://keyboard_caret.png" id="4_khy30"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="4_n5is8"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="5_g0ggt"]
 [ext_resource type="Script" uid="uid://cpnhrcdu05ku3" path="res://addons/shaker/src/Vector2/shaker_component2D.gd" id="6_cw2n6"]
+[ext_resource type="Texture2D" uid="uid://fp4515o6yq86" path="res://keyboard_bracket_greater.png" id="6_epekd"]
+[ext_resource type="Texture2D" uid="uid://b1huffymql73c" path="res://keyboard_caret_outline.png" id="6_fu0c1"]
 [ext_resource type="Script" uid="uid://cowisxgfyacvm" path="res://addons/shaker/data/Vector2/BaseShakerType2D.gd" id="7_5pvcq"]
+[ext_resource type="Texture2D" uid="uid://dr120s6656f0n" path="res://keyboard_bracket_greater_outline.png" id="7_fu0c1"]
 [ext_resource type="Script" uid="uid://cgnofq82vdj5d" path="res://addons/shaker/data/Vector2/ShakerTypeSineWave2D.gd" id="8_vp5s4"]
 [ext_resource type="Script" uid="uid://c8pgsx7nl8f4d" path="res://addons/shaker/data/Single/BaseShakerType1D.gd" id="9_gkv0d"]
 [ext_resource type="Script" uid="uid://c53c74e4hl7bg" path="res://addons/shaker/data/Vector2/ShakerPreset2D.gd" id="10_yy5m5"]
@@ -35,12 +39,6 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_556uy"]
 size = Vector2(190, 294)
-
-[sub_resource type="Resource" id="Resource_208cp"]
-metadata/__load_path__ = "res://kenney_input-prompts_1.4/Keyboard & Mouse/Vector/keyboard_arrow_up.svg"
-
-[sub_resource type="Resource" id="Resource_3jlkh"]
-metadata/__load_path__ = "res://kenney_input-prompts_1.4/Keyboard & Mouse/Vector/keyboard_arrow_up_outline.svg"
 
 [sub_resource type="Curve" id="Curve_fu0c1"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.37078655), 0.0, 0.0, 0, 0]
@@ -151,7 +149,6 @@ script = ExtResource("16_5iyy6")
 fill_textures = Array[Texture2D]([ExtResource("2_7bi7i")])
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v4k62"]
-load_path = "res://.godot/imported/shape2.png-da500bd8e9c6e18a9751b16a937643a4.ctex"
 
 [sub_resource type="Gradient" id="Gradient_yd2v3"]
 offsets = PackedFloat32Array(0, 0.641, 0.7)
@@ -1557,11 +1554,22 @@ script = ExtResource("10_yy5m5")
 PositionShake = Array[ExtResource("7_5pvcq")]([SubResource("Resource_rhq6j")])
 metadata/_custom_type_script = "uid://c53c74e4hl7bg"
 
+[sub_resource type="Gradient" id="Gradient_v4k62"]
+offsets = PackedFloat32Array(0, 0.8782051)
+colors = PackedColorArray(0.8627451, 0.8627451, 0.8627451, 0.02745098, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_5iyy6"]
+gradient = SubResource("Gradient_v4k62")
+width = 139
+height = 126
+fill_from = Vector2(1, 0)
+fill_to = Vector2(0, 0.04090909)
+
 [node name="CUEVA" type="Node2D" unique_id=389738377]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2083472927]
 physics_interpolation_mode = 1
-position = Vector2(-358.6842, -2293.9473)
+position = Vector2(-346.3158, -2293.9473)
 zoom = Vector2(0.95, 0.95)
 process_callback = 0
 limit_left = -965
@@ -1592,24 +1600,13 @@ stream = ExtResource("21_n5is8")
 volume_db = 0.52
 autoplay = true
 
-[node name="Derecha" type="Sprite2D" parent="." unique_id=795347139]
-position = Vector2(1540, -421)
-scale = Vector2(2.70312, 2.70312)
-script = ExtResource("23_g0ggt")
-lado = 1
-
-[node name="izquierda" type="Sprite2D" parent="." unique_id=1018957352]
-position = Vector2(1250, -421)
-scale = Vector2(2.70312, 2.70312)
-flip_h = true
-script = ExtResource("23_g0ggt")
-
 [node name="KeyboardArrowUp" type="Sprite2D" parent="." unique_id=1846330136]
-position = Vector2(4814, 359)
+position = Vector2(4364, 595)
 scale = Vector2(2.375, 2.375)
+texture = ExtResource("4_khy30")
 script = ExtResource("26_gkv0d")
-sprite_def = SubResource("Resource_208cp")
-sprite_press = SubResource("Resource_3jlkh")
+sprite_def = ExtResource("4_khy30")
+sprite_press = ExtResource("6_fu0c1")
 
 [node name="BACKGROUND" type="CanvasLayer" parent="." unique_id=1863704092]
 layer = -20
@@ -2167,9 +2164,27 @@ metadata/_custom_type_script = "uid://bivivx4cfhp35"
 
 [node name="PLAYER" parent="." unique_id=159581252 node_paths=PackedStringArray("shakers") instance=ExtResource("18_epekd")]
 z_index = -1
-position = Vector2(-643, -2472)
+position = Vector2(-594, -2466)
 shakers = [NodePath("../CAMERAS/CAM_Z_0 (CINEMATICA)/ShakerComponent2D"), NodePath("../CAMERAS/CAM_Z_INICIAL 1/ShakerComponent2D"), NodePath("../CAMERAS/CAM_Z_2/ShakerComponent2D"), NodePath("../CAMERAS/CAM_Z_3/ShakerComponent2D"), NodePath("../CAMERAS/CAM_Z_4/ShakerComponent2D"), NodePath("../CAMERAS/CAM_Z_5/ShakerComponent2D"), NodePath("../CAMERAS/CAM_Z_6/ShakerComponent2D"), NodePath("../CAMERAS/CAM_Z_7/ShakerComponent2D"), NodePath("../CAMERAS/CAM_Z_8/ShakerComponent2D")]
 jump = Array[AudioStream]([SubResource("AudioStreamWAV_kctci")])
+
+[node name="Derecha" type="Sprite2D" parent="." unique_id=795347139]
+position = Vector2(67, 297.49988)
+scale = Vector2(2.70312, 2.70312)
+texture = ExtResource("6_epekd")
+script = ExtResource("23_g0ggt")
+lado = 1
+sprite_def = ExtResource("6_epekd")
+sprite_press = ExtResource("7_fu0c1")
+
+[node name="izquierda" type="Sprite2D" parent="." unique_id=1018957352]
+position = Vector2(-516, 297.49988)
+scale = Vector2(2.70312, 2.70312)
+texture = ExtResource("6_epekd")
+flip_h = true
+script = ExtResource("23_g0ggt")
+sprite_def = ExtResource("6_epekd")
+sprite_press = ExtResource("7_fu0c1")
 
 [node name="BLUR" type="ColorRect" parent="." unique_id=1023669745]
 light_mask = 0
@@ -2610,7 +2625,7 @@ position = Vector2(55, -0.000524588)
 
 [node name="CAM_Z_0 (CINEMATICA)" type="Node2D" parent="CAMERAS" unique_id=2066112135 node_paths=PackedStringArray("follow_target")]
 top_level = true
-position = Vector2(-358.6842, -2293.9473)
+position = Vector2(-346.3158, -2293.9473)
 script = ExtResource("4_n5is8")
 priority = 1
 follow_mode = 2
@@ -2764,12 +2779,13 @@ metadata/_custom_type_script = "uid://cpnhrcdu05ku3"
 [node name="Luz Salida" type="PointLight2D" parent="." unique_id=624407078]
 position = Vector2(-1171.9999, -3434)
 scale = Vector2(26.81, 11.376001)
-energy = 16.0
+color = Color(1, 1, 1, 0.54901963)
+energy = 3.01
+blend_mode = 2
 range_layer_max = 37
 shadow_enabled = true
-texture = ExtResource("2_7bi7i")
+texture = SubResource("GradientTexture2D_5iyy6")
 offset = Vector2(52.8674, -10.636444)
-metadata/_edit_lock_ = true
 
 [editable path="Detects camera/Detect_player(Cameras)3"]
 [editable path="Detects camera/Detect_player(Cameras)7"]

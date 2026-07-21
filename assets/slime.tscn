@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dqikt7qww3yjd"]
+
+[ext_resource type="Texture2D" uid="uid://c3p3r0yq8r5os" path="res://assets/Shape Template/Circle.svg" id="1_mx1ru"]
+
+[node name="Slime" type="Sprite2D" unique_id=2015142943]
+self_modulate = Color(0, 0.50980395, 0.1764706, 1)
+texture = ExtResource("1_mx1ru")
+
+[node name="Idle eyes (ALWAYS VISIBLE)" type="Node2D" parent="." unique_id=600238768]
+
+[node name="Sprite2D2" type="Sprite2D" parent="Idle eyes (ALWAYS VISIBLE)" unique_id=1770709719]
+clip_children = 2
+position = Vector2(27, -27)
+scale = Vector2(0.273064, 0.273064)
+texture = ExtResource("1_mx1ru")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Idle eyes (ALWAYS VISIBLE)/Sprite2D2" unique_id=998233741]
+self_modulate = Color(0, 0, 0, 1)
+scale = Vector2(0.666667, 0.666667)
+texture = ExtResource("1_mx1ru")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Idle eyes (ALWAYS VISIBLE)" unique_id=157262713]
+position = Vector2(-23, -27)
+scale = Vector2(0.273064, 0.273064)
+texture = ExtResource("1_mx1ru")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Idle eyes (ALWAYS VISIBLE)/Sprite2D3" unique_id=1820006585]
+self_modulate = Color(0, 0, 0, 1)
+scale = Vector2(0.666667, 0.666667)
+texture = ExtResource("1_mx1ru")

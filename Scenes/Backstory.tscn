@@ -1,51 +1,65 @@
 [gd_scene format=3 uid="uid://46jpbymm1ivj"]
 
-[ext_resource type="Script" uid="uid://74382urv8fml" path="res://Scripts/story_manager.gd" id="1_kdmin"]
-[ext_resource type="Script" uid="uid://bd1drdt88u3ys" path="res://Scripts/Page.gd" id="2_ff4vp"]
+[ext_resource type="Script" uid="uid://hqx7a5h8xmw0" path="res://Scripts/story_manager.gd" id="1_kdmin"]
+[ext_resource type="Script" uid="uid://cc48ah5fvwqtl" path="res://Scripts/Page.gd" id="2_ff4vp"]
 [ext_resource type="Texture2D" uid="uid://ddan6385cu2k6" path="res://Story/Backstory/backstory.png" id="3_3hdmu"]
+[ext_resource type="Texture2D" uid="uid://chduw7dim2ef5" path="res://Story/sketch1784590845660.png" id="3_v0eyf"]
+[ext_resource type="Texture2D" uid="uid://dbcfento0levj" path="res://Story/Backstory/bacsktory2.png" id="4_ntojy"]
 [ext_resource type="AudioStream" uid="uid://dns5mcb4gpik3" path="res://Sfx/cartoon voices male amused surprised 24.wav" id="5_ek3wl"]
+[ext_resource type="Texture2D" uid="uid://dn4323t0b8v6f" path="res://Story/Backstory/backstory3.png" id="7_5pp8k"]
+[ext_resource type="Texture2D" uid="uid://khohcdtg28fj" path="res://assets/Flecha.svg" id="7_ff4vp"]
 [ext_resource type="AudioStream" uid="uid://3tmhbbmnh8cm" path="res://Sfx/511485__mlaudio__cartoon_wink_magic_sparkle.wav" id="7_ntojy"]
-[ext_resource type="Texture2D" uid="uid://ccxy7f02mksav" path="res://assets/Boton.png" id="9_3t43m"]
+[ext_resource type="Texture2D" uid="uid://chsvfx2jv5qqj" path="res://Story/Backstory/Backstory4.png" id="8_kjhh3"]
+[ext_resource type="Texture2D" uid="uid://c07bfve73kme1" path="res://assets/Flechad.svg" id="9_3t43m"]
+[ext_resource type="Texture2D" uid="uid://kd1u7coy22rg" path="res://Story/Backstory/backstory5.png" id="9_kjhh3"]
 [ext_resource type="Script" uid="uid://cd301lc0q28j" path="res://Scripts/animation.gd" id="10_ek3wl"]
 [ext_resource type="Shader" uid="uid://dvrmxbv6ypxfk" path="res://new_shader.gdshader" id="11_l8ntj"]
-[ext_resource type="Texture2D" uid="uid://bia2tu2giw3mj" path="res://assets/Botonder.png" id="11_ntojy"]
+[ext_resource type="Texture2D" uid="uid://b6unk02por7mq" path="res://Story/1.png" id="11_ot5fi"]
 [ext_resource type="Script" uid="uid://dmqra71jgby31" path="res://Scripts/Buttons_storyboard.gd" id="11_u5jtl"]
+[ext_resource type="Texture2D" uid="uid://bni84djhdkph0" path="res://Story/fin.png" id="11_v0eyf"]
 [ext_resource type="AudioStream" uid="uid://bcebg6oocs7yi" path="res://Sfx/ronquido.wav" id="11_vdkjn"]
 [ext_resource type="Script" uid="uid://p51iyp3bg6f2" path="res://Scenes/play_sound.gd" id="12_8n5ii"]
 [ext_resource type="Texture2D" uid="uid://b66ko2v2a0syt" path="res://assets/Shape Template/Square.svg" id="12_kdmin"]
 [ext_resource type="AudioStream" uid="uid://cmnbepmgp1y1h" path="res://Sfx/Moment storyboard.wav" id="13_x7041"]
 
+[sub_resource type="Resource" id="Resource_vdkjn"]
+script = ExtResource("2_ff4vp")
+title = "ANTERIORMENTE"
+Imgs = Array[Texture]([ExtResource("3_v0eyf")])
+metadata/_custom_type_script = "uid://cc48ah5fvwqtl"
+
 [sub_resource type="Resource" id="Resource_0h83a"]
 script = ExtResource("2_ff4vp")
-metadata/_custom_type_script = "uid://bd1drdt88u3ys"
+Imgs = Array[Texture]([ExtResource("3_3hdmu")])
 
 [sub_resource type="Resource" id="Resource_ek3wl"]
 script = ExtResource("2_ff4vp")
+Imgs = Array[Texture]([ExtResource("4_ntojy")])
 SFX_s = Array[AudioStream]([ExtResource("5_ek3wl")])
-metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_ntojy"]
 script = ExtResource("2_ff4vp")
+Imgs = Array[Texture]([ExtResource("7_5pp8k")])
 SFX_s = Array[AudioStream]([ExtResource("7_ntojy")])
-metadata/_custom_type_script = "uid://bd1drdt88u3ys"
 
 [sub_resource type="Resource" id="Resource_5pp8k"]
 script = ExtResource("2_ff4vp")
-metadata/_custom_type_script = "uid://bd1drdt88u3ys"
-
-[sub_resource type="Resource" id="Resource_kjhh3"]
-script = ExtResource("2_ff4vp")
-metadata/_custom_type_script = "uid://bd1drdt88u3ys"
+Imgs = Array[Texture]([ExtResource("8_kjhh3")])
 
 [sub_resource type="Resource" id="Resource_v0eyf"]
 script = ExtResource("2_ff4vp")
 title = "Fin"
+Imgs = Array[Texture]([ExtResource("9_kjhh3")])
+
+[sub_resource type="Resource" id="Resource_u5jtl"]
+script = ExtResource("2_ff4vp")
+Imgs = Array[Texture]([ExtResource("11_ot5fi")])
 sfx_loop = ExtResource("11_vdkjn")
-metadata/_custom_type_script = "uid://bd1drdt88u3ys"
+metadata/_custom_type_script = "uid://cc48ah5fvwqtl"
 
 [sub_resource type="Resource" id="Resource_ot5fi"]
 script = ExtResource("2_ff4vp")
-metadata/_custom_type_script = "uid://bd1drdt88u3ys"
+Imgs = Array[Texture]([ExtResource("11_v0eyf")])
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ot5fi"]
 
@@ -88,7 +102,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_kdmin")
 panel_story = NodePath("Img-Story/IMG_storyboard")
-Pages = Array[ExtResource("2_ff4vp")]([SubResource("Resource_0h83a"), SubResource("Resource_ek3wl"), SubResource("Resource_ntojy"), SubResource("Resource_5pp8k"), SubResource("Resource_kjhh3"), SubResource("Resource_v0eyf"), SubResource("Resource_ot5fi")])
+Pages = Array[ExtResource("2_ff4vp")]([SubResource("Resource_vdkjn"), SubResource("Resource_0h83a"), SubResource("Resource_ek3wl"), SubResource("Resource_ntojy"), SubResource("Resource_5pp8k"), SubResource("Resource_v0eyf"), SubResource("Resource_u5jtl"), SubResource("Resource_ot5fi")])
 to_scene = "res://Scenes/main_menu.tscn"
 
 [node name="Buttons" type="CanvasLayer" parent="." unique_id=1451298765 node_paths=PackedStringArray("btn_prev", "btn_next", "storyboard")]
@@ -103,16 +117,18 @@ self_modulate = Color(0.862745, 0.807843, 0, 1)
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = -15.5
-offset_right = 47.0
-offset_bottom = 15.5
+offset_top = -108.5
+offset_right = 282.0
+offset_bottom = 108.5
 grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+pivot_offset = Vector2(0, 108.5)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ot5fi")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_v0eyf")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_vdkjn")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_kjhh3")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5pp8k")
-icon = ExtResource("9_3t43m")
+icon = ExtResource("7_ff4vp")
 script = ExtResource("10_ek3wl")
 
 [node name="Btn_next" type="Button" parent="Buttons" unique_id=1219081782]
@@ -122,17 +138,19 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -49.0
-offset_top = -15.5
-offset_bottom = 15.5
+offset_left = -282.0
+offset_top = -108.5
+offset_bottom = 108.5
 grow_horizontal = 0
 grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+pivot_offset = Vector2(282, 108.5)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ot5fi")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_v0eyf")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_vdkjn")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_kjhh3")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5pp8k")
-icon = ExtResource("11_ntojy")
+icon = ExtResource("9_3t43m")
 script = ExtResource("10_ek3wl")
 
 [node name="Img-Story" type="CanvasLayer" parent="." unique_id=504644266]
@@ -154,6 +172,7 @@ sound = ExtResource("13_x7041")
 
 [node name="EFFECT" type="CanvasLayer" parent="." unique_id=998609881]
 layer = 3
+visible = false
 
 [node name="TextureRect" type="TextureRect" parent="EFFECT" unique_id=1997457783]
 material = SubResource("ShaderMaterial_ff4vp")
